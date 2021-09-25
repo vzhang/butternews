@@ -11,6 +11,10 @@
 #import <YYKit/YYKit.h>
 #import "Third.h"
 
+
+NSString* const BNRequestInvalidJSONDataError = @"BNRequestInvalidJSONDataError";
+NSString *const BNRequestNetworkError = @"BNRequestNetworkError";
+
 @implementation BNRequest
 
 - (YTKRequestMethod)requestMethod {

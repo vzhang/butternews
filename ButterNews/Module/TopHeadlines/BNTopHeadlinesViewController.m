@@ -32,7 +32,6 @@ NSString* const BNTopHeadlinesTableViewCellReuseIdentifier = @"BNTopHeadlinesTab
     [self.tableView.refreshControl beginRefreshing];
     [self loadData];
     
-    
 //    [self loadTestData];
 }
 
@@ -54,6 +53,7 @@ NSString* const BNTopHeadlinesTableViewCellReuseIdentifier = @"BNTopHeadlinesTab
     refreshControl.tintColor = [UIColor colorWithHexString:@"#FFCA00"];
     refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"pull to refresh"];
     [refreshControl addTarget:self action:@selector(loadData) forControlEvents:UIControlEventValueChanged];
+    
     self.tableView.refreshControl = refreshControl;
     [self.tableView registerClass:[BNTopHeadlinesTableViewCell class] forCellReuseIdentifier:BNTopHeadlinesTableViewCellReuseIdentifier];
 }

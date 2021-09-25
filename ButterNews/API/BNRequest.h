@@ -11,8 +11,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NSString* const BNRequestInvalidJSONDataError = @"BNRequestInvalidJSONDataError";
-NSString *const BNRequestNetworkError = @"BNRequestNetworkError";
+extern NSString* const BNRequestInvalidJSONDataError;
+extern NSString *const BNRequestNetworkError;
 
 typedef void(^BNRequestDataBlock)(__kindof BNDataModel *data);
 typedef void(^BNRequestErrorBlock)(__kindof BNErrorModel *error);

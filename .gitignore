@@ -90,3 +90,5 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,
 nnn
+Pods
+/ButterNews.xcodeproj/xcuserdata/mingzhang.xcuserdatad/xcschemes/xcschememanagement.plist

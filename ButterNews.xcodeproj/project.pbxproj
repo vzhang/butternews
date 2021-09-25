@@ -26,6 +26,7 @@
 		CBDD00E526FF1CCE000986A6 /* BNNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD00E426FF1CCE000986A6 /* BNNewsDetailViewController.m */; };
 		CBDD00EB26FF2E15000986A6 /* BNFailureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD00EA26FF2E15000986A6 /* BNFailureView.m */; };
 		CBDD00F326FF5555000986A6 /* UIApplicaton+BN.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD00F226FF5555000986A6 /* UIApplicaton+BN.m */; };
+		CBDD00F626FF6C0A000986A6 /* BNEverythingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD00F526FF6C0A000986A6 /* BNEverythingRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,8 @@
 		CBDD00EA26FF2E15000986A6 /* BNFailureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNFailureView.m; sourceTree = "<group>"; };
 		CBDD00F126FF5555000986A6 /* UIApplicaton+BN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplicaton+BN.h"; sourceTree = "<group>"; };
 		CBDD00F226FF5555000986A6 /* UIApplicaton+BN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplicaton+BN.m"; sourceTree = "<group>"; };
+		CBDD00F426FF6C0A000986A6 /* BNEverythingRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNEverythingRequest.h; sourceTree = "<group>"; };
+		CBDD00F526FF6C0A000986A6 /* BNEverythingRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNEverythingRequest.m; sourceTree = "<group>"; };
 		E34AD6C7B7AE55258C238735 /* Pods-ButterNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterNews.debug.xcconfig"; path = "Target Support Files/Pods-ButterNews/Pods-ButterNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,7 +134,7 @@
 		CBD9282926FEF66600537E7F /* API */ = {
 			isa = PBXGroup;
 			children = (
-				CBD9282E26FEF9BF00537E7F /* Detail */,
+				CBD9282E26FEF9BF00537E7F /* Everything */,
 				CBD9282D26FEF9B700537E7F /* List */,
 				CBD9282A26FEF68E00537E7F /* BNRequest.h */,
 				CBD9282B26FEF68E00537E7F /* BNRequest.m */,
@@ -153,11 +156,13 @@
 			path = List;
 			sourceTree = "<group>";
 		};
-		CBD9282E26FEF9BF00537E7F /* Detail */ = {
+		CBD9282E26FEF9BF00537E7F /* Everything */ = {
 			isa = PBXGroup;
 			children = (
+				CBDD00F426FF6C0A000986A6 /* BNEverythingRequest.h */,
+				CBDD00F526FF6C0A000986A6 /* BNEverythingRequest.m */,
 			);
-			path = Detail;
+			path = Everything;
 			sourceTree = "<group>";
 		};
 		CBD9283226FEFE3200537E7F /* Data */ = {
@@ -373,6 +378,7 @@
 				CBDD00EB26FF2E15000986A6 /* BNFailureView.m in Sources */,
 				CBD9283B26FEFF1800537E7F /* BNTopHeadlineListDataModel.m in Sources */,
 				CBD9283826FEFEA600537E7F /* BNErrorModel.m in Sources */,
+				CBDD00F626FF6C0A000986A6 /* BNEverythingRequest.m in Sources */,
 				CBD9283526FEFE6300537E7F /* BNDataModel.m in Sources */,
 				CBD9284026FF08AE00537E7F /* BNBaseViewController.m in Sources */,
 				CBDD00E526FF1CCE000986A6 /* BNNewsDetailViewController.m in Sources */,

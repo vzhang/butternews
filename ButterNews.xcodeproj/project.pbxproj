@@ -7,28 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362B744F059DD2A283A1F420 /* Pods_ButterNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2E632C9468C699784E2EAB /* Pods_ButterNews.framework */; };
 		CBD9281226FEF50600537E7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9281126FEF50600537E7F /* AppDelegate.m */; };
 		CBD9281526FEF50600537E7F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9281426FEF50600537E7F /* SceneDelegate.m */; };
-		CBD9281826FEF50600537E7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9281726FEF50600537E7F /* ViewController.m */; };
 		CBD9281B26FEF50600537E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD9281926FEF50600537E7F /* Main.storyboard */; };
 		CBD9281D26FEF50700537E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBD9281C26FEF50700537E7F /* Assets.xcassets */; };
 		CBD9282026FEF50700537E7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD9281E26FEF50700537E7F /* LaunchScreen.storyboard */; };
 		CBD9282326FEF50700537E7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9282226FEF50700537E7F /* main.m */; };
+		CBD9282C26FEF68E00537E7F /* BNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9282B26FEF68E00537E7F /* BNRequest.m */; };
+		CBD9283126FEF9E000537E7F /* BNTopHeadlineListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9283026FEF9E000537E7F /* BNTopHeadlineListRequest.m */; };
+		CBD9283526FEFE6300537E7F /* BNDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9283426FEFE6300537E7F /* BNDataModel.m */; };
+		CBD9283826FEFEA600537E7F /* BNErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9283726FEFEA600537E7F /* BNErrorModel.m */; };
+		CBD9283B26FEFF1800537E7F /* BNTopHeadlineListDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9283A26FEFF1800537E7F /* BNTopHeadlineListDataModel.m */; };
+		CBD9284026FF08AE00537E7F /* BNBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9283F26FF08AE00537E7F /* BNBaseViewController.m */; };
+		CBD9284426FF091900537E7F /* BNTopHeadlinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9284326FF091900537E7F /* BNTopHeadlinesViewController.m */; };
+		CBD9284826FF09D300537E7F /* BNTopHeadlinesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9284726FF09D300537E7F /* BNTopHeadlinesTableViewCell.m */; };
+		CBDD00E126FF18C4000986A6 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = CBDD00E026FF18C4000986A6 /* test.json */; };
+		CBDD00E526FF1CCE000986A6 /* BNNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD00E426FF1CCE000986A6 /* BNNewsDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D2E632C9468C699784E2EAB /* Pods_ButterNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C510F8D1FE276C55F8E861 /* Pods-ButterNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterNews.release.xcconfig"; path = "Target Support Files/Pods-ButterNews/Pods-ButterNews.release.xcconfig"; sourceTree = "<group>"; };
 		CBD9280D26FEF50600537E7F /* ButterNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD9281026FEF50600537E7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CBD9281126FEF50600537E7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CBD9281326FEF50600537E7F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		CBD9281426FEF50600537E7F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		CBD9281626FEF50600537E7F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CBD9281726FEF50600537E7F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CBD9281A26FEF50600537E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBD9281C26FEF50700537E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBD9281F26FEF50700537E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBD9282126FEF50700537E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBD9282226FEF50700537E7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBD9282A26FEF68E00537E7F /* BNRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRequest.h; sourceTree = "<group>"; };
+		CBD9282B26FEF68E00537E7F /* BNRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRequest.m; sourceTree = "<group>"; };
+		CBD9282F26FEF9E000537E7F /* BNTopHeadlineListRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNTopHeadlineListRequest.h; sourceTree = "<group>"; };
+		CBD9283026FEF9E000537E7F /* BNTopHeadlineListRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNTopHeadlineListRequest.m; sourceTree = "<group>"; };
+		CBD9283326FEFE6300537E7F /* BNDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNDataModel.h; sourceTree = "<group>"; };
+		CBD9283426FEFE6300537E7F /* BNDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNDataModel.m; sourceTree = "<group>"; };
+		CBD9283626FEFEA600537E7F /* BNErrorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNErrorModel.h; sourceTree = "<group>"; };
+		CBD9283726FEFEA600537E7F /* BNErrorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNErrorModel.m; sourceTree = "<group>"; };
+		CBD9283926FEFF1800537E7F /* BNTopHeadlineListDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNTopHeadlineListDataModel.h; sourceTree = "<group>"; };
+		CBD9283A26FEFF1800537E7F /* BNTopHeadlineListDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNTopHeadlineListDataModel.m; sourceTree = "<group>"; };
+		CBD9283E26FF08AE00537E7F /* BNBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNBaseViewController.h; sourceTree = "<group>"; };
+		CBD9283F26FF08AE00537E7F /* BNBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNBaseViewController.m; sourceTree = "<group>"; };
+		CBD9284226FF091900537E7F /* BNTopHeadlinesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNTopHeadlinesViewController.h; sourceTree = "<group>"; };
+		CBD9284326FF091900537E7F /* BNTopHeadlinesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNTopHeadlinesViewController.m; sourceTree = "<group>"; };
+		CBD9284626FF09D300537E7F /* BNTopHeadlinesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNTopHeadlinesTableViewCell.h; sourceTree = "<group>"; };
+		CBD9284726FF09D300537E7F /* BNTopHeadlinesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNTopHeadlinesTableViewCell.m; sourceTree = "<group>"; };
+		CBDD00E026FF18C4000986A6 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		CBDD00E326FF1CCE000986A6 /* BNNewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNNewsDetailViewController.h; sourceTree = "<group>"; };
+		CBDD00E426FF1CCE000986A6 /* BNNewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNNewsDetailViewController.m; sourceTree = "<group>"; };
+		CBDD00E726FF29EA000986A6 /* Third.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Third.h; sourceTree = "<group>"; };
+		E34AD6C7B7AE55258C238735 /* Pods-ButterNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterNews.debug.xcconfig"; path = "Target Support Files/Pods-ButterNews/Pods-ButterNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +67,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				362B744F059DD2A283A1F420 /* Pods_ButterNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0839C5FC6D01C826A041BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E34AD6C7B7AE55258C238735 /* Pods-ButterNews.debug.xcconfig */,
+				97C510F8D1FE276C55F8E861 /* Pods-ButterNews.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CBD9280426FEF50600537E7F = {
 			isa = PBXGroup;
 			children = (
 				CBD9280F26FEF50600537E7F /* ButterNews */,
 				CBD9280E26FEF50600537E7F /* Products */,
+				4E0839C5FC6D01C826A041BE /* Pods */,
+				D2FCF405B55AB139E6F0A1F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +104,125 @@
 		CBD9280F26FEF50600537E7F /* ButterNews */ = {
 			isa = PBXGroup;
 			children = (
+				CBDD00E626FF29D8000986A6 /* Define */,
+				CBD9283C26FF085000537E7F /* Module */,
+				CBD9282926FEF66600537E7F /* API */,
 				CBD9281026FEF50600537E7F /* AppDelegate.h */,
 				CBD9281126FEF50600537E7F /* AppDelegate.m */,
 				CBD9281326FEF50600537E7F /* SceneDelegate.h */,
 				CBD9281426FEF50600537E7F /* SceneDelegate.m */,
-				CBD9281626FEF50600537E7F /* ViewController.h */,
-				CBD9281726FEF50600537E7F /* ViewController.m */,
 				CBD9281926FEF50600537E7F /* Main.storyboard */,
 				CBD9281C26FEF50700537E7F /* Assets.xcassets */,
 				CBD9281E26FEF50700537E7F /* LaunchScreen.storyboard */,
 				CBD9282126FEF50700537E7F /* Info.plist */,
 				CBD9282226FEF50700537E7F /* main.m */,
+				CBDD00E026FF18C4000986A6 /* test.json */,
 			);
 			path = ButterNews;
+			sourceTree = "<group>";
+		};
+		CBD9282926FEF66600537E7F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CBD9282E26FEF9BF00537E7F /* Detail */,
+				CBD9282D26FEF9B700537E7F /* List */,
+				CBD9282A26FEF68E00537E7F /* BNRequest.h */,
+				CBD9282B26FEF68E00537E7F /* BNRequest.m */,
+				CBD9283326FEFE6300537E7F /* BNDataModel.h */,
+				CBD9283426FEFE6300537E7F /* BNDataModel.m */,
+				CBD9283626FEFEA600537E7F /* BNErrorModel.h */,
+				CBD9283726FEFEA600537E7F /* BNErrorModel.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CBD9282D26FEF9B700537E7F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CBD9283226FEFE3200537E7F /* Data */,
+				CBD9282F26FEF9E000537E7F /* BNTopHeadlineListRequest.h */,
+				CBD9283026FEF9E000537E7F /* BNTopHeadlineListRequest.m */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		CBD9282E26FEF9BF00537E7F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		CBD9283226FEFE3200537E7F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CBD9283926FEFF1800537E7F /* BNTopHeadlineListDataModel.h */,
+				CBD9283A26FEFF1800537E7F /* BNTopHeadlineListDataModel.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CBD9283C26FF085000537E7F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				CBDD00E226FF1CB9000986A6 /* NewsDetail */,
+				CBD9284126FF08EF00537E7F /* TopHeadlines */,
+				CBD9283D26FF08A000537E7F /* Base */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		CBD9283D26FF08A000537E7F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CBD9283E26FF08AE00537E7F /* BNBaseViewController.h */,
+				CBD9283F26FF08AE00537E7F /* BNBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CBD9284126FF08EF00537E7F /* TopHeadlines */ = {
+			isa = PBXGroup;
+			children = (
+				CBD9284526FF09B900537E7F /* Views */,
+				CBD9284226FF091900537E7F /* BNTopHeadlinesViewController.h */,
+				CBD9284326FF091900537E7F /* BNTopHeadlinesViewController.m */,
+			);
+			path = TopHeadlines;
+			sourceTree = "<group>";
+		};
+		CBD9284526FF09B900537E7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBD9284626FF09D300537E7F /* BNTopHeadlinesTableViewCell.h */,
+				CBD9284726FF09D300537E7F /* BNTopHeadlinesTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CBDD00E226FF1CB9000986A6 /* NewsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CBDD00E326FF1CCE000986A6 /* BNNewsDetailViewController.h */,
+				CBDD00E426FF1CCE000986A6 /* BNNewsDetailViewController.m */,
+			);
+			path = NewsDetail;
+			sourceTree = "<group>";
+		};
+		CBDD00E626FF29D8000986A6 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				CBDD00E726FF29EA000986A6 /* Third.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		D2FCF405B55AB139E6F0A1F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D2E632C9468C699784E2EAB /* Pods_ButterNews.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBD9282626FEF50700537E7F /* Build configuration list for PBXNativeTarget "ButterNews" */;
 			buildPhases = (
+				924E159900DF401748CD2678 /* [CP] Check Pods Manifest.lock */,
 				CBD9280926FEF50600537E7F /* Sources */,
 				CBD9280A26FEF50600537E7F /* Frameworks */,
 				CBD9280B26FEF50600537E7F /* Resources */,
+				AD81A628CC92261009487C83 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD9282026FEF50700537E7F /* LaunchScreen.storyboard in Resources */,
+				CBDD00E126FF18C4000986A6 /* test.json in Resources */,
 				CBD9281D26FEF50700537E7F /* Assets.xcassets in Resources */,
 				CBD9281B26FEF50600537E7F /* Main.storyboard in Resources */,
 			);
@@ -141,15 +293,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		924E159900DF401748CD2678 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ButterNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD81A628CC92261009487C83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterNews/Pods-ButterNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterNews/Pods-ButterNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ButterNews/Pods-ButterNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CBD9280926FEF50600537E7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD9281826FEF50600537E7F /* ViewController.m in Sources */,
 				CBD9281226FEF50600537E7F /* AppDelegate.m in Sources */,
+				CBD9283126FEF9E000537E7F /* BNTopHeadlineListRequest.m in Sources */,
 				CBD9282326FEF50700537E7F /* main.m in Sources */,
+				CBD9283B26FEFF1800537E7F /* BNTopHeadlineListDataModel.m in Sources */,
+				CBD9283826FEFEA600537E7F /* BNErrorModel.m in Sources */,
+				CBD9283526FEFE6300537E7F /* BNDataModel.m in Sources */,
+				CBD9284026FF08AE00537E7F /* BNBaseViewController.m in Sources */,
+				CBDD00E526FF1CCE000986A6 /* BNNewsDetailViewController.m in Sources */,
+				CBD9282C26FEF68E00537E7F /* BNRequest.m in Sources */,
+				CBD9284426FF091900537E7F /* BNTopHeadlinesViewController.m in Sources */,
 				CBD9281526FEF50600537E7F /* SceneDelegate.m in Sources */,
+				CBD9284826FF09D300537E7F /* BNTopHeadlinesTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -279,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +491,7 @@
 		};
 		CBD9282726FEF50700537E7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E34AD6C7B7AE55258C238735 /* Pods-ButterNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +518,7 @@
 		};
 		CBD9282826FEF50700537E7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97C510F8D1FE276C55F8E861 /* Pods-ButterNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

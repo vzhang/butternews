@@ -30,9 +30,7 @@ NSString* const BNTopHeadlinesTableViewCellReuseIdentifier = @"BNTopHeadlinesTab
     [self createViewLayouts];
     [self configureSelf];
     
-//    [self.tableView.refreshControl beginRefreshing];
     [self loadData];
-    
 //    [self loadTestData];
 }
 

@@ -23,6 +23,7 @@
     self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     BNTopHeadlinesViewController *topHeadlinesViewController = [[BNTopHeadlinesViewController alloc] init];
     UINavigationController *topHeadlinesNavController = [[UINavigationController alloc] initWithRootViewController:topHeadlinesViewController];
+    
 //    UITabBarController *tabBarController = [[UITabBarController alloc] init];
 //    tabBarController.viewControllers = @[topHeadlinesNavController];
 //    self.window.rootViewController = tabBarController;

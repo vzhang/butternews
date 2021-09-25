@@ -8,6 +8,8 @@ target 'ButterNews' do
   pod 'Masonry'
   pod 'YYKit'
   pod 'SDWebImage'
+  pod 'MBProgressHUD'
+  pod 'RealReachability'
   # Pods for ButterNews
 
 end

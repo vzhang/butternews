@@ -7,6 +7,12 @@ PODS:
   - AFNetworking/Security (4.0.1)
   - AFNetworking/Serialization (4.0.1)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - RealReachability (1.4.1):
+    - RealReachability/Connection (= 1.4.1)
+    - RealReachability/Ping (= 1.4.1)
+  - RealReachability/Connection (1.4.1)
+  - RealReachability/Ping (1.4.1)
   - SDWebImage (5.10.4):
     - SDWebImage/Core (= 5.10.4)
   - SDWebImage/Core (5.10.4)
@@ -18,6 +24,8 @@ PODS:
 
 DEPENDENCIES:
   - Masonry
+  - MBProgressHUD
+  - RealReachability
   - SDWebImage
   - YTKNetwork
   - YYKit
@@ -26,6 +34,8 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - Masonry
+    - MBProgressHUD
+    - RealReachability
     - SDWebImage
     - YTKNetwork
     - YYKit
@@ -33,10 +43,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  RealReachability: 828e74e3a1e89ba8f54395344637689cf4065c36
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   YTKNetwork: a2337af4b444b5d0a658122fa3d8a425e2425716
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 00587848af725781160d94b2a879230643deba7b
+PODFILE CHECKSUM: cbd149c600cc8e5764eb8b67e9548bacfcecab0f
 
 COCOAPODS: 1.11.2

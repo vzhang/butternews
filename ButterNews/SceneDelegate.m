@@ -7,8 +7,12 @@
 
 #import "SceneDelegate.h"
 #import "BNTopHeadlinesViewController.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+
 
 @interface SceneDelegate ()
+
+@property (nonatomic, assign) NSInteger networkStatus;
 
 @end
 
@@ -19,9 +23,42 @@
     self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     BNTopHeadlinesViewController *topHeadlinesViewController = [[BNTopHeadlinesViewController alloc] init];
     UINavigationController *topHeadlinesNavController = [[UINavigationController alloc] initWithRootViewController:topHeadlinesViewController];
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
 //    tabBarController.viewControllers = @[topHeadlinesNavController];
 //    self.window.rootViewController = tabBarController;
+    
+//    self.networkStatus = -1;
+    
+//    Reachability* reach = [Reachability reachabilityWithHostname:@"www.google.com"];
+//    reach.reachableBlock = ^(Reachability *reach) {
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            if (self.networkStatus == -1 || self.networkStatus == 1) {
+//                return;
+//            }
+//
+//            self.networkStatus = 1;
+//
+//            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.window animated:YES];
+//            hud.mode = MBProgressHUDModeText;
+//            hud.detailsLabel.text = @"Reconnected Intenet";
+//            [hud hideAnimated:YES afterDelay:1.0];
+//        });
+//    };
+//
+//    reach.unreachableBlock = ^(Reachability *reach) {
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            if (self.networkStatus == 0) {
+//                return;
+//            }
+//            self.networkStatus = 0;
+//
+//            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.window animated:YES];
+//            hud.mode = MBProgressHUDModeText;
+//            hud.detailsLabel.text = @"No Intenet";
+//            [hud hideAnimated:YES afterDelay:1.0];
+//        });
+//    };
+//    [reach startNotifier];
     
     self.window.rootViewController = topHeadlinesNavController;
     [self.window makeKeyAndVisible];

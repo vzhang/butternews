@@ -24,6 +24,8 @@
 		CBD9284826FF09D300537E7F /* BNTopHeadlinesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD9284726FF09D300537E7F /* BNTopHeadlinesTableViewCell.m */; };
 		CBDD00E126FF18C4000986A6 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = CBDD00E026FF18C4000986A6 /* test.json */; };
 		CBDD00E526FF1CCE000986A6 /* BNNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD00E426FF1CCE000986A6 /* BNNewsDetailViewController.m */; };
+		CBDD00EB26FF2E15000986A6 /* BNFailureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD00EA26FF2E15000986A6 /* BNFailureView.m */; };
+		CBDD00F326FF5555000986A6 /* UIApplicaton+BN.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDD00F226FF5555000986A6 /* UIApplicaton+BN.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,10 @@
 		CBDD00E326FF1CCE000986A6 /* BNNewsDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNNewsDetailViewController.h; sourceTree = "<group>"; };
 		CBDD00E426FF1CCE000986A6 /* BNNewsDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNNewsDetailViewController.m; sourceTree = "<group>"; };
 		CBDD00E726FF29EA000986A6 /* Third.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Third.h; sourceTree = "<group>"; };
+		CBDD00E926FF2E15000986A6 /* BNFailureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNFailureView.h; sourceTree = "<group>"; };
+		CBDD00EA26FF2E15000986A6 /* BNFailureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNFailureView.m; sourceTree = "<group>"; };
+		CBDD00F126FF5555000986A6 /* UIApplicaton+BN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplicaton+BN.h"; sourceTree = "<group>"; };
+		CBDD00F226FF5555000986A6 /* UIApplicaton+BN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplicaton+BN.m"; sourceTree = "<group>"; };
 		E34AD6C7B7AE55258C238735 /* Pods-ButterNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterNews.debug.xcconfig"; path = "Target Support Files/Pods-ButterNews/Pods-ButterNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +110,7 @@
 		CBD9280F26FEF50600537E7F /* ButterNews */ = {
 			isa = PBXGroup;
 			children = (
+				CBDD00F026FF5523000986A6 /* Tools */,
 				CBDD00E626FF29D8000986A6 /* Define */,
 				CBD9283C26FF085000537E7F /* Module */,
 				CBD9282926FEF66600537E7F /* API */,
@@ -175,6 +182,7 @@
 		CBD9283D26FF08A000537E7F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				CBDD00E826FF2DF5000986A6 /* View */,
 				CBD9283E26FF08AE00537E7F /* BNBaseViewController.h */,
 				CBD9283F26FF08AE00537E7F /* BNBaseViewController.m */,
 			);
@@ -184,20 +192,20 @@
 		CBD9284126FF08EF00537E7F /* TopHeadlines */ = {
 			isa = PBXGroup;
 			children = (
-				CBD9284526FF09B900537E7F /* Views */,
+				CBD9284526FF09B900537E7F /* View */,
 				CBD9284226FF091900537E7F /* BNTopHeadlinesViewController.h */,
 				CBD9284326FF091900537E7F /* BNTopHeadlinesViewController.m */,
 			);
 			path = TopHeadlines;
 			sourceTree = "<group>";
 		};
-		CBD9284526FF09B900537E7F /* Views */ = {
+		CBD9284526FF09B900537E7F /* View */ = {
 			isa = PBXGroup;
 			children = (
 				CBD9284626FF09D300537E7F /* BNTopHeadlinesTableViewCell.h */,
 				CBD9284726FF09D300537E7F /* BNTopHeadlinesTableViewCell.m */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 		CBDD00E226FF1CB9000986A6 /* NewsDetail */ = {
@@ -215,6 +223,24 @@
 				CBDD00E726FF29EA000986A6 /* Third.h */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		CBDD00E826FF2DF5000986A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CBDD00E926FF2E15000986A6 /* BNFailureView.h */,
+				CBDD00EA26FF2E15000986A6 /* BNFailureView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBDD00F026FF5523000986A6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CBDD00F126FF5555000986A6 /* UIApplicaton+BN.h */,
+				CBDD00F226FF5555000986A6 /* UIApplicaton+BN.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		D2FCF405B55AB139E6F0A1F7 /* Frameworks */ = {
@@ -341,8 +367,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD9281226FEF50600537E7F /* AppDelegate.m in Sources */,
+				CBDD00F326FF5555000986A6 /* UIApplicaton+BN.m in Sources */,
 				CBD9283126FEF9E000537E7F /* BNTopHeadlineListRequest.m in Sources */,
 				CBD9282326FEF50700537E7F /* main.m in Sources */,
+				CBDD00EB26FF2E15000986A6 /* BNFailureView.m in Sources */,
 				CBD9283B26FEFF1800537E7F /* BNTopHeadlineListDataModel.m in Sources */,
 				CBD9283826FEFEA600537E7F /* BNErrorModel.m in Sources */,
 				CBD9283526FEFE6300537E7F /* BNDataModel.m in Sources */,

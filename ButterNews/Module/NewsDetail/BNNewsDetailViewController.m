@@ -8,6 +8,7 @@
 #import "BNNewsDetailViewController.h"
 #import <WebKit/WebKit.h>
 #import <YYKit/YYKit.h>
+#import "UIApplicaton+BN.h"
 
 @interface BNNewsDetailViewController ()<WKNavigationDelegate>
 
@@ -22,7 +23,7 @@
     [super viewDidLoad];
     [self createViews];
     [self createViewLayouts];
-    [self configureSelf];
+    [self configureSelf];    
 }
 
 #pragma mark - Layouts
@@ -37,8 +38,8 @@
     }];
     
     // 获取导航条和状态栏的高度
-//    CGFloat statusHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
-    CGFloat statusHeight = self.view.window.windowScene.statusBarManager.statusBarFrame.size.height;
+    CGFloat statusHeight = [UIApplication sharedApplication].bnKeyWindow.safeAreaInsets.top;
+//    CGFloat statusHeight = [UIApplication sharedApplication].bnKeyWindow.windowScene.statusBarManager.statusBarFrame.size.height;
     CGFloat navHeight = self.navigationController.navigationBar.frame.size.height;
     
     [self.progressView mas_makeConstraints:^(MASConstraintMaker *make) {

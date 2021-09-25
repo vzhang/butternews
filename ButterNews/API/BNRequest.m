@@ -88,13 +88,24 @@ NSString *const BNRequestNetworkError = @"BNRequestNetworkError";
         return failure(error);
         
     } failure:^(__kindof YTKBaseRequest *request) {
-        BNErrorModel *error = [[BNErrorModel alloc] init];
-        error.code = BNRequestNetworkError;
-        error.request = request;
-        failure(error);
+        BNErrorModel *error = [BNErrorModel modelWithDictionary:request.responseJSONObject];
+        
+        if (nil != error && nil != error.code && error.code.length > 0) {
+            failure(error);
+        } else {
+            error = [[BNErrorModel alloc] init];
+            
+            NSDictionary *userInfo = request.error.userInfo;
+            error.message = userInfo[@"NSLocalizedDescription"];
+            error.code = [NSString stringWithFormat:@"%zd",request.error.code];
+            if (nil == error.code || error.code.length == 0) {
+                error.code = BNRequestNetworkError;
+            }
+            
+            failure(error);
+        }
     }];
 }
-
 
 
 @end

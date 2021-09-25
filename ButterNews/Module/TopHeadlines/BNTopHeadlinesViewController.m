@@ -29,7 +29,8 @@ NSString* const BNTopHeadlinesTableViewCellReuseIdentifier = @"BNTopHeadlinesTab
     [self createViews];
     [self createViewLayouts];
     [self configureSelf];
-    [self.tableView.refreshControl beginRefreshing];
+    
+//    [self.tableView.refreshControl beginRefreshing];
     [self loadData];
     
 //    [self loadTestData];
@@ -62,22 +63,30 @@ NSString* const BNTopHeadlinesTableViewCellReuseIdentifier = @"BNTopHeadlinesTab
 - (void)loadData {
     [self.newsList removeAllObjects];
     
+    [self showLoading];
     @weakify(self);
     [self.topHeadlineListRequest startWithData:[BNTopHeadlineListDataModel class] Success:^(__kindof BNTopHeadlineListDataModel * _Nonnull data) {
         @strongify(self);
-        if (data == nil) {
+        if (nil == data) {
             return;
         }
         
         [self.newsList addObjectsFromArray:data.articles];
         [self.tableView reloadData];
         [self.tableView.refreshControl endRefreshing];
+        [self hideLoading];
     } failure:^(__kindof BNErrorModel * _Nonnull error) {
         @strongify(self);
         [self.tableView.refreshControl endRefreshing];
+        [self showFailure:error];
+        [self hideLoading];
     }];
 }
 
+- (void)reloadData {
+    [self hideFailure];
+    [self loadData];
+}
 
 #pragma mark - Test Data
 - (void)loadTestData {
@@ -127,7 +136,6 @@ NSString* const BNTopHeadlinesTableViewCellReuseIdentifier = @"BNTopHeadlinesTab
 
 
 #pragma mark - Getters
-
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] init];

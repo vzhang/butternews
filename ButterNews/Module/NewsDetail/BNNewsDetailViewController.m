@@ -9,6 +9,7 @@
 #import <WebKit/WebKit.h>
 #import <YYKit/YYKit.h>
 #import "UIApplicaton+BN.h"
+#import "Color.h"
 
 @interface BNNewsDetailViewController ()<WKNavigationDelegate>
 
@@ -100,7 +101,7 @@
 - (UIProgressView *)progressView {
     if (!_progressView) {
         _progressView = [[UIProgressView alloc] init];
-        _progressView.tintColor = [UIColor colorWithHexString:@"#FFCA00"];
+        _progressView.tintColor = kBNPrimaryColor;//[UIColor colorWithHexString:@"#FFCA00"];
         _progressView.transform = CGAffineTransformMakeScale(1.0f, 1.5f);
     }
     

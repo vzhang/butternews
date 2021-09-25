@@ -68,6 +68,7 @@
 		CBDD00F226FF5555000986A6 /* UIApplicaton+BN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplicaton+BN.m"; sourceTree = "<group>"; };
 		CBDD00F426FF6C0A000986A6 /* BNEverythingRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNEverythingRequest.h; sourceTree = "<group>"; };
 		CBDD00F526FF6C0A000986A6 /* BNEverythingRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNEverythingRequest.m; sourceTree = "<group>"; };
+		CBDD00F726FF7A1D000986A6 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		E34AD6C7B7AE55258C238735 /* Pods-ButterNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterNews.debug.xcconfig"; path = "Target Support Files/Pods-ButterNews/Pods-ButterNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				CBDD00E726FF29EA000986A6 /* Third.h */,
+				CBDD00F726FF7A1D000986A6 /* Color.h */,
 			);
 			path = Define;
 			sourceTree = "<group>";

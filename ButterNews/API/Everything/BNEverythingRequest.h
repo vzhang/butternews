@@ -13,7 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *q;
 
-@property (nonatomic, copy) NSString *qInTitle;
+//@property (nonatomic, copy) NSString *qInTitle;
+//
+//@property (nonatomic, strong) NSArray<NSString *> *sources;
 
 @end
 
